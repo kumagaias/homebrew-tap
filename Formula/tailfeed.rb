@@ -5,21 +5,21 @@
 class Tailfeed < Formula
   desc "A tail-style terminal RSS reader"
   homepage "https://github.com/kumagaias/tailfeed"
-  version "0.1.16"
+  version "0.1.17"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kumagaias/tailfeed/releases/download/v0.1.16/tailfeed_darwin_amd64.tar.gz"
-      sha256 "6d2648dbe0c9732ffd6b28dabf9b2f82518d1aefd67bebde9663a9f670fadf9a"
+      url "https://github.com/kumagaias/tailfeed/releases/download/v0.1.17/tailfeed_darwin_amd64.tar.gz"
+      sha256 "40237c7a158935a775fb1542164d3e3991a1643446eb5aa99b7fe6470a56de52"
 
       define_method(:install) do
         bin.install "tailfeed"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kumagaias/tailfeed/releases/download/v0.1.16/tailfeed_darwin_arm64.tar.gz"
-      sha256 "2bc50bdfb14b87fa313d5ef0f1e4eb8f5dbf09415dd95d220d5d219d1c834fde"
+      url "https://github.com/kumagaias/tailfeed/releases/download/v0.1.17/tailfeed_darwin_arm64.tar.gz"
+      sha256 "fb086dee1e60b6b827574f40b2400dfc24d9a249775445580884154f375bf554"
 
       define_method(:install) do
         bin.install "tailfeed"
@@ -29,15 +29,15 @@ class Tailfeed < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kumagaias/tailfeed/releases/download/v0.1.16/tailfeed_linux_amd64.tar.gz"
-      sha256 "da381037eee8ecf24686fe1f3451968893240e1f88c40865f48d469052a2829e"
+      url "https://github.com/kumagaias/tailfeed/releases/download/v0.1.17/tailfeed_linux_amd64.tar.gz"
+      sha256 "970b02f6a5afb4361388d0b8f534ea5d583ff81f72d9aa42bca106e6ce585392"
       define_method(:install) do
         bin.install "tailfeed"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kumagaias/tailfeed/releases/download/v0.1.16/tailfeed_linux_arm64.tar.gz"
-      sha256 "21855d242a1cde704acbfce32b0ca375fb4431e9e41ed18f42cf886a911b7a21"
+      url "https://github.com/kumagaias/tailfeed/releases/download/v0.1.17/tailfeed_linux_arm64.tar.gz"
+      sha256 "6cabd75aefc09f3103d9ebd166b034d6096a4d1d2e98bd7f1bd5d7f53a170059"
       define_method(:install) do
         bin.install "tailfeed"
       end
