@@ -5,21 +5,21 @@
 class Tailagent < Formula
   desc "Observability, diagnosis, and repair suggestions for AI coding agents"
   homepage "https://github.com/kumagaias/tailagent"
-  version "0.3.1"
+  version "0.3.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kumagaias/tailagent/releases/download/v0.3.1/tailagent_0.3.1_darwin_amd64.tar.gz"
-      sha256 "37e362327047b83a057358f4b1cb757ba1ce91d26aa7cd76562d8025e6f85dd6"
+      url "https://github.com/kumagaias/tailagent/releases/download/v0.3.2/tailagent_0.3.2_darwin_amd64.tar.gz"
+      sha256 "8a8ba1ec93320dd7da3a036700613a60d61497a1d58a55fb713979d1f384dc19"
 
       define_method(:install) do
         bin.install "tailagent"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kumagaias/tailagent/releases/download/v0.3.1/tailagent_0.3.1_darwin_arm64.tar.gz"
-      sha256 "4b396d414c868563fc29c5d2ecc39ef9f9c6e05a6a5641977f320da6ed3f0f94"
+      url "https://github.com/kumagaias/tailagent/releases/download/v0.3.2/tailagent_0.3.2_darwin_arm64.tar.gz"
+      sha256 "16093aa0b218a10ab493bc7ca08d15dad7f1647c5b9a222725e98e450c0aab9f"
 
       define_method(:install) do
         bin.install "tailagent"
@@ -29,15 +29,15 @@ class Tailagent < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kumagaias/tailagent/releases/download/v0.3.1/tailagent_0.3.1_linux_amd64.tar.gz"
-      sha256 "5aa95c29611c45fb232ccae3e585e8aa0534a52b12ff4c5af5375be689b0669e"
+      url "https://github.com/kumagaias/tailagent/releases/download/v0.3.2/tailagent_0.3.2_linux_amd64.tar.gz"
+      sha256 "990f2fb027142344e00932df580feb35a75250b86c401be7e4473e4237fbbab3"
       define_method(:install) do
         bin.install "tailagent"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kumagaias/tailagent/releases/download/v0.3.1/tailagent_0.3.1_linux_arm64.tar.gz"
-      sha256 "5b7f2583be4062c678b4f6b09fefcb4413665d1e167ada440669300c5311a1bd"
+      url "https://github.com/kumagaias/tailagent/releases/download/v0.3.2/tailagent_0.3.2_linux_arm64.tar.gz"
+      sha256 "56b20479035a851dc10d0d0eb72a519ab616755682760584884cab7140ecea2e"
       define_method(:install) do
         bin.install "tailagent"
       end
